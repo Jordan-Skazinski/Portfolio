@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jordan Skazinski</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="code.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/magikarp.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Jordan Skazinski</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Full-Stack Dev</p>
+        <img src="img/PictureOfMe.jpg" alt="Basic Pic of me, need a better pic" class="intro__img">
+    </section>
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Test</p>
+
+        <div class="about-me__body">
+            <p>
+                I'm a Software Engineer proficient in HTML, CSS, and Javascript. I have three years of experience as a
+                machine operator
+                which has trained my problem solving skills and given me an eye for finding methods to improve
+                efficiency. I'm also an
+                active artist, which gives me the knowledge to up my game on the designing of web pages.
+            </p>
+        </div>
+
+        <img src="img/Untitled Diagram.drawio.png" alt="Another Photo of me">
+    </section>
+
+    <section class="my--skills" id="skills">
+        <h2 class="section__title section__title--skills">My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <h3>Front-End</h3>
+                <p>JavaScript ES6 | React.JS | React Hooks | Redux | jQuery | HTML5 | CSS3</p>
+            </div> <!-- close skill -->
+
+            <div class="skill">
+                <h3>Back-End</h3>
+                <p>Node.js | MangoDB | Express.JS | Knex.js | SQL servers</p>
+            </div> <!-- close skill -->
+
+        </div> <!-- close skills -->
+
+        <a href="#Projects" class="btn">My Projects</a>
+    </section>
+
+
+
+    <section class="my--projects" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__subtitle"></p>
+        <div class="portfolio">
+            <a href="https://github.com/Jordan-Skazinski/Restaurant-Reservation" class="portfolio__item">
+                <h3>Restaurant Reservation</h3></a>
+                <ul>
+                    <li>Designed a React application where users can reserve items at a restaurant</li>
+                    <li>Built using JavaScript, React, HTML, Bootstrap, Express, SQL server, and Knex.JS</li>
+                    <li>Managed global state through React Context for deletion and alteration of forms</li>
+                    <li>Connects to a SQL server with efficient, easy to understand, routes</li>
+                </ul>
+                <img src="img/Artboard 1.jpg" alt="" class="portfolio__img">
+            
+
+            <a href="https://github.com/Jordan-Skazinski/Project-_WeLoveMovies-_Qualified-Jordan_skazinski" class="portfolio__item">
+                <h3>We Love Movies</h3></a>
+                <ul>
+                    <li>Designed the back end of a movie browsing web app.</li>
+                    <li>Built using Knex.JS, SQL server, Jester, and Express.JS</li>
+                    <li>Set up multiple routes for Reviews, Users, and Theaters</li>
+                    <li>Tested thoroughly with Jester</li>
+                </ul>
+                <img src="img/Artboard 1.jpg" alt="" class="portfolio__img">
+            
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <h3>Machine Operator</h3>
+        <h3>Boulder, CO</h3>
+        <h3>Celestial Seasonings</h3>
+        <h3>June, 2019 - December, 2021</h3>
+        <ul>
+            <li>Accomplished learning various machines, learning every type of machine used for every shift</li>
+            <li>Improved efficiency of tasks given, meeting and exceeding daily quotas, by paying attention to the small
+                details and always looking for ways to improve</li>
+            <li>Taught many new hires, helping them learn the efficient and safe way of doing things</li>
+        </ul>
+    </section>
+
+    <section class="Education" id="Education">
+        <h2>Education</h2>
+        <h3>Certificate, Software Engineering</h3>
+        <h3>Remote</h3>
+        <h3>Thinkful</h3>
+        <h3>December, 2021 - March, 2022</h3>
+        <ul>
+            <li>Practical mastery of JavaScript, HTML, CSS, React, and Git for web applications</li>
+            <li>Created and deployed applications with a mobile-first mentality</li>
+            <li>Went to two lectures a day on Front-End and Back-End development</li>
+        </ul>
+    </section>
+
+    <footer>
+        <a href="mailto:jjskazinski@gmail.com" class="footer__link">jjskazinski@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link"
+                    href="https://www.linkedin.com/in/jordan-skazinski/">Linkedin</a></li>
+            <li class="social-list__item"><a class="social-list__link"
+                    href="https://github.com/Jordan-Skazinski">Github</a></li>
+
+        </ul>
+    </footer>
+</body>
+
+</html>
