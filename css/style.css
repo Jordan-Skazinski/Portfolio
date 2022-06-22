@@ -103,7 +103,9 @@ h3 {
 .intro {
     position: relative;
 }
-
+.logo {
+  width: 20%;
+}
 .intro__img {
     box-shadow: var(--bs);
 }
