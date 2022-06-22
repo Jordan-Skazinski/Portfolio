@@ -15,27 +15,43 @@
         rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="code.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/magikarp.png" alt="">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
-                <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
     </header>
 
 
@@ -48,24 +64,24 @@
     </section>
 
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Test</p>
+        <h2 class="section__title section__title--about">About</h2>
+        <p class="section__subtitle section__subtitle--about">Who I am</p>
 
         <div class="about-me__body">
             <p>
-                I'm a Software Engineer proficient in HTML, CSS, and Javascript. I have three years of experience as a
-                machine operator
-                which has trained my problem solving skills and given me an eye for finding methods to improve
-                efficiency. I'm also an
-                active artist, which gives me the knowledge to up my game on the designing of web pages.
+                Full-Stack software engineer proficient in using Javascript for front-end and back-end 
+                programming, React, HTML, CSS, API implementing, Node.JS, Express, PostgreSQL, and frameworks 
+                like Bootstrap. Three years trained machine operator applying problem solving skills and an eye 
+                for finding methods to improve efficiency as well as an active artist utilizing creative skills 
+                in web development.
             </p>
         </div>
 
-        <img src="img/Untitled Diagram.drawio.png" alt="Another Photo of me">
+        <img src="" alt="">
     </section>
 
-    <section class="my--skills" id="skills">
-        <h2 class="section__title section__title--skills">My Skills</h2>
+    <section class="my--skills mx-auto" style="width: 50%;" id="skills">
+        <h2 class="section__title section__title--skills mx-auto" style="width: 200px;">My Skills</h2>
 
         <div class="skills">
 
@@ -81,63 +97,108 @@
 
         </div> <!-- close skills -->
 
-        <a href="#Projects" class="btn">My Projects</a>
+        
     </section>
 
 
 
     <section class="my--projects" id="projects">
-        <h2 class="section__title">Projects</h2>
-        <p class="section__subtitle"></p>
-        <div class="portfolio">
-            <a href="https://github.com/Jordan-Skazinski/Restaurant-Reservation" class="portfolio__item">
-                <h3>Restaurant Reservation</h3></a>
-                <ul>
-                    <li>Designed a React application where users can reserve items at a restaurant</li>
-                    <li>Built using JavaScript, React, HTML, Bootstrap, Express, SQL server, and Knex.JS</li>
-                    <li>Managed global state through React Context for deletion and alteration of forms</li>
-                    <li>Connects to a SQL server with efficient, easy to understand, routes</li>
+        <h2 class="section__title mx-auto" style="width: 200px;">Projects</h2>
+        <p class="section__subtitle mx-auto" style="width: 200px;"></p>
+        <div class="card-group portfolio">
+            <div class="card">
+              <img class="card-img-top" src="img/resturantRes.PNG" alt="Card image cap">
+              <div class="card-body">
+                <a href="https://github.com/Jordan-Skazinski/Project-_WeLoveMovies-_Qualified-Jordan_skazinski" class="portfolio__item">
+                <h5 class="card-title">Restaurant Reservation</h5></a>
+                <ul class="card-text">
+                    <li>Full stack reservation and table management system.</li>
+                    <li>Implemented react router and express to build a RESTful API in order to make HTTP requests for all of the reservation data stored on the connected PostgreSQL database.
+                    </li>
+                    <li>Created CRUD functions and knex queries to handle data going to and coming from the database.</li>
+                    <li>Used Git to track changes and versions while keeping sensitive information from being pushed to repositories.</li>                  
                 </ul>
-                <img src="img/Artboard 1.jpg" alt="" class="portfolio__img">
-            
-
-            <a href="https://github.com/Jordan-Skazinski/Project-_WeLoveMovies-_Qualified-Jordan_skazinski" class="portfolio__item">
-                <h3>We Love Movies</h3></a>
-                <ul>
-                    <li>Designed the back end of a movie browsing web app.</li>
-                    <li>Built using Knex.JS, SQL server, Jester, and Express.JS</li>
-                    <li>Set up multiple routes for Reviews, Users, and Theaters</li>
-                    <li>Tested thoroughly with Jester</li>
+                <p class="card-text">Technology: React, Node.js, Express, Knex and PostgreSQL.</p>
+                <p class="card-text"><small class="text-muted">Last updated Apr 27</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="img/weLoveMovies.PNG" alt="Card image cap">
+              <div class="card-body">
+                <a href="https://github.com/Jordan-Skazinski/Project-_WeLoveMovies-_Qualified-Jordan_skazinski" class="portfolio__item">
+                <h5 class="card-title">We Love Movies</h5></a>
+                <ul class="card-text">
+                    <li>Assembled the back end of a movie website allowing any user to search for their favorite movies.</li>
+                    <li>Used CRUD methods for reviews, and view theaters and movies that are showing. </li>
+                    <li>Applied router and controller functions to retrieve a user's specific requests.</li> 
                 </ul>
-                <img src="img/Artboard 1.jpg" alt="" class="portfolio__img">
-            
-        </div>
+                <p class="card-text">Technology: Node.js, Express, and Knex. Version control with Git.</p>
+                <p class="card-text"><small class="text-muted">Last updated ar 16</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="img/caesarDecoder.PNG" alt="Card image cap">
+              <div class="card-body">
+                <a href="https://github.com/Jordan-Skazinski/Decoder-Ring" class="portfolio__item">
+                <h5 class="card-title">Decoder Ring</h5></a>
+                <ul class="card-text">
+                    <li>Built to be an encryption/decryption application to communicate and read top-secret messages.</li>
+                    <li>Created utilizing the test-driven development method.</li>
+                </ul>
+                <p class="card-text">Technology: JavaScript ES6, HTML5, Node.js, Bootstrap, Mocha, Chai.</p>
+                <p class="card-text"><small class="text-muted">Last updated Jan 13</small></p>
+              </div>
+            </div>
+          </div>
     </section>
 
     <section class="experience" id="experience">
-        <h2>Experience</h2>
-        <h3>Machine Operator</h3>
-        <h3>Boulder, CO</h3>
-        <h3>Celestial Seasonings</h3>
-        <h3>June, 2019 - December, 2021</h3>
+        <h2 class="mx-auto" style="width: 200px;">Experience</h2>
+        <h4 class="section__subtitle section__subtitle--about">Machine Operator</h4>
+        <p>Boulder, CO</p>
+        <p>Celestial Seasonings</p>
+        <p>02/2019 - 12/2021</p>
         <ul>
-            <li>Accomplished learning various machines, learning every type of machine used for every shift</li>
+            <li>Accomplished learning various machines, learning every type of machine used for every shift.</li>
             <li>Improved efficiency of tasks given, meeting and exceeding daily quotas, by paying attention to the small
-                details and always looking for ways to improve</li>
-            <li>Taught many new hires, helping them learn the efficient and safe way of doing things</li>
+                details and always looking for ways to improve.</li>
+            <li>Taught many new hires, helping them learn the efficient and safe way of doing things.</li>
         </ul>
+
+        <h4 class="section__subtitle section__subtitle--about">Seasonal Driver</h4>
+        <p>Boulder, CO</p>
+        <p>USPS</p>
+        <p>11/2018 - 01/2019</p>
+
+        <h4 class="section__subtitle section__subtitle--about">Assistant Store Manager</h4>
+        <p>Longmont, CO</p>
+        <p>Loaf & Jug</p>
+        <p>09/2016 - 11/2018</p>
+
+        <h4 class="section__subtitle section__subtitle--about">Team Member</h4>
+        <p>Longmont, CO</p>
+        <p>Target</p>
+        <p>07/2014 - 10/2016</p>
     </section>
 
-    <section class="Education" id="Education">
-        <h2>Education</h2>
-        <h3>Certificate, Software Engineering</h3>
-        <h3>Remote</h3>
-        <h3>Thinkful</h3>
-        <h3>December, 2021 - March, 2022</h3>
+    <section class="education" id="education">
+        <h2 class="mx-auto" style="width: 200px;">Education</h2>
+        <h4 class="section__subtitle section__subtitle--about">Certificate, Software Engineering</h4>
+        <p>Remote</p>
+        <p>Thinkful</p>
+        <p>12/2021 - 05/2022</p>
         <ul>
-            <li>Practical mastery of JavaScript, HTML, CSS, React, and Git for web applications</li>
-            <li>Created and deployed applications with a mobile-first mentality</li>
-            <li>Went to two lectures a day on Front-End and Back-End development</li>
+            <li>Learned industry best practices and software development standards with a focus on Javascript, HTML5, CSS3, React Native, Node.js, PostgreSQL, RESTful API's, algorithms, and data structures.</li>
+            <li>Developed and deployed mobile-first applications while learning new languages and frameworks, spending several hours per week collaborating with and learning from senior web developers.
+        </ul>
+
+        <h4 class="section__subtitle section__subtitle--about">Game Art Design</h4>
+        <p>Denver, CO</p>
+        <p>Art Institute of Colorado</p>
+        <p>06/2017 - 12/2018</p>
+        <ul>
+            <li>I have an eye for design and pay close attention to details in order to bring my artwork to life.</li>
+            <li>Through the years, I've developed a creative work process to ensure an organized and planned strategy ensures proper time-management.*</li>
         </ul>
     </section>
 
